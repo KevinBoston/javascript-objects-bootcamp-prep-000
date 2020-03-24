@@ -1,12 +1,12 @@
 var playlist = {
-  'artistName': 'songTitle'
+  'Linkin Park': 'In the End',
+  Evanesence: 'My Immortal'
 }
-function updatePlaylist (pList, newArtist, newSong){
-  pList['artistName'] = newArtist;
-  pList['songTitle'] = newSong;
-  return pList;
+function updatePlaylist (playlist, artist, song){
+  playlist[artist] = song;
+  return playlist;
 }
 function removeFromPlaylist (pList, artistName){
-  delete pList['artistName'];
+  delete pList[artist];
   return pList;
 }
